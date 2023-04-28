@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: "Ysabeau", sans-serif;
+}
+
+.curso {
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin: 40px;
+
+  justify-content: center;
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+}
+.content-text {
+  width: 60%;
+  height: auto;
+  padding-right: 300px;
+  font-weight: 700;
+  button {
+    color: rgb(249 115 22);
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+  button:hover {
+    background-color: rgb(249 115 22);
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+  }
+}
+.precio {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.texto {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .curso {
+    flex-direction: column;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .content-text {
+    margin-left: 0;
+    width: 100%;
+    h2 {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .curso {
+    flex-direction: column;
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .content-text {
+    margin-left: 0;
+  }
+}
