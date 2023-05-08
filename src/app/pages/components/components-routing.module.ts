@@ -46,7 +46,7 @@ const routes: Routes = [
 
   },
   {
-    path: 'pago',
+    path: 'terminosycondiciones',
     component: PagoComponent
 
   },

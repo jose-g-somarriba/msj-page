@@ -68,13 +68,18 @@
 
 .content-product1 {
   display: flex;
-  justify-content: center;
+  width: 100%;
   gap: 40px;
+  justify-content: center;
 }
 
 .masaje-1 {
-  width: 700px;
+  width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h2 {
     text-align: center;
@@ -88,7 +93,7 @@
   text-align: center;
   img {
     margin-top: 20px;
-    width: 220px;
+    width: 200px;
     height: 150px;
     border-radius: 5px;
   }
@@ -114,11 +119,16 @@
   width: 100%;
   gap: 25px;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 .product-venta-1 {
-  width: 600px;
+  width: 100%;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   h2 {
     text-align: center;
@@ -200,11 +210,11 @@
 
 .product-variados {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 100px;
   margin-bottom: 140px;
   text-align: center;
-  gap: 50px;
+  gap: 20px;
   button {
     color: rgb(249 115 22);
     border: none;
@@ -239,9 +249,16 @@
   }
 
   img {
-    width: 280px;
-    height: 240px;
+    width: 220px;
+    height: 180px;
     border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1120px) {
+  .content-product1 {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -249,11 +266,25 @@
   .card-oferta {
     top: 0;
     left: 0;
-    width: 220px;
+    width: 60%;
+    height: auto;
+    .title-oferta {
+      font-size: 15px;
+    }
+    .parrafo-oferta {
+      font-size: 12px;
+    }
   }
   .btn-precio {
+    width: 100%;
+    button {
+      width: 90px;
+      height: 30px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
     p {
-      font-size: 25px;
+      font-size: 19px;
     }
   }
   .container-2 {
